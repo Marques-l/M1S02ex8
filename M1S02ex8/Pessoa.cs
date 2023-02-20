@@ -10,6 +10,11 @@ namespace M1S02ex8
     {
         public string Nome { get; set; }
         public DateTime DataNascimento { get; set; }
+        public Pessoa(string nome, DateTime dataNascimento)
+        { 
+            Nome= nome;
+            DataNascimento = dataNascimento;
+        }
         public void MostrarIdade()
         {
             CalcularIdade();
@@ -18,5 +23,6 @@ namespace M1S02ex8
         {
 
         }
+      
     }
 }
