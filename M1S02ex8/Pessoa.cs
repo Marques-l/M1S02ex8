@@ -24,13 +24,15 @@ namespace M1S02ex8
            
             var dataAtual = DateTime.Now;
             var idade = dataAtual.Year - DataNascimento.Year;
-            Console.WriteLine(idade); 
-           // if (DataNascimento > dataAtual.AddYears(-idade))
-           // {
-              //  idade--;
-             //  
-          //  }
-
+           
+            if (DataNascimento > dataAtual.AddYears(-idade))
+            {
+               Console.WriteLine(idade--);
+            }
+            else
+            {
+                Console.WriteLine(idade);
+            }
         }
       
     }
