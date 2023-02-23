@@ -21,6 +21,15 @@ namespace M1S02ex8
         }
         public void CalcularIdade()
         {
+           
+            var dataAtual = DateTime.Now;
+            var idade = dataAtual.Year - DataNascimento.Year;
+            Console.WriteLine(idade); 
+           // if (DataNascimento > dataAtual.AddYears(-idade))
+           // {
+              //  idade--;
+             //  
+          //  }
 
         }
       
